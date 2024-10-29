@@ -5,20 +5,27 @@ value_archive= []
 while True:
 
     #Place another while loop for the input and conditions
-    while True:
-        #Create a statement that ask users to input a number from 1-50
-        range_values=int(input("Enter any number from 1-50: "))
+    try:
+        while True:
+            #Create a statement that ask users to input a number from 1-50
+            range_values=int(input("Enter any number from 1-50: "))
 
-        #State conditions wherein a user can only put numbers from 1-50
-        if 1<= range_values <= 50:
-            print ("Please enter another number another number if you want to continue, if not, input an invalid number, thank you!")
-        else:
-            break
+            #State conditions wherein a user can only put numbers from 1-50
+            if 1<= range_values <= 50:
+                print ("Please enter another number another number if you want to continue, if not, input an invalid number, thank you!")
+            elif str(range_values):
+                print("Wrong")
+            else:
+                break
 
-        # Store the values to the general list
-        value_archive.append(range_values)
+            # Store the values to the general list
+            value_archive.append(range_values)
 
-    break #Breaking the final loop
+        break  # Breaking the final loop
+
+    except:
+        print ("Please input a number only")
+
 
 #Place five list for storing designated values stated in the conditions
 result_1= []
