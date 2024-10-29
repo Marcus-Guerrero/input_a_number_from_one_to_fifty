@@ -1,5 +1,6 @@
-#State a list
+#State the list
 value_archive= []
+
 
 #Place a while loop
 while True:
@@ -13,8 +14,6 @@ while True:
             #State conditions wherein a user can only put numbers from 1-50
             if 1<= range_values <= 50:
                 print ("Please enter another number another number if you want to continue, if not, input an invalid number, thank you!")
-            elif str(range_values):
-                print("Wrong")
             else:
                 break
 
@@ -25,7 +24,6 @@ while True:
 
     except:
         print ("Please input a number only")
-
 
 #Place five list for storing designated values stated in the conditions
 result_1= []
