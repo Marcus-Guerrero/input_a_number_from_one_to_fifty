@@ -20,10 +20,10 @@ while True:
             # Store the values to the general list
             value_archive.append(range_values)
 
-        break  # Breaking the final loop
+        break #Break the first loop
 
     except:
-        print ("Please input a number only")
+        break  # Breaking the loop if the inputted value is/are letters
 
 #Place five list for storing designated values stated in the conditions
 result_1= []
