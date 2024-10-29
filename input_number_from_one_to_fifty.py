@@ -30,7 +30,32 @@ while True:
     if another_entry == "n":
         break
 
-result= len(value_archive)
-print (result)
+result_1= []
+result_2= []
+result_3= []
+result_4= []
+result_5= []
+
+for val in value_archive:
+    if 1<= val <=10:
+        result_1.append(val)
+    elif 11<= val <= 20:
+        result_2.append(val)
+    elif 21<= val <= 30:
+        result_3.append(val)
+    elif 31<= val <= 40:
+        result_4.append(val)
+    else:
+        result_5.append(val)
+
+val_1=(len(result_1))
+val_2=(len(result_2))
+val_3=(len(result_3))
+val_4=(len(result_4))
+val_5=(len(result_5))
+
+print (f" 1-10: {val_1} \n 11-20: {val_2} \n 21-30: {val_3} \n 31-40: {val_4} \n 41-50: {val_5}")
+
+
 #Print all the values inputted by arrange in various ranges from 1-10...all the way to 41-50
 
