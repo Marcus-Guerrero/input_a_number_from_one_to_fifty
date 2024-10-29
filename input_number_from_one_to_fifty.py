@@ -11,25 +11,14 @@ while True:
 
         #State conditions wherein a user can only put numbers from 1-50
         if 1<= range_values <= 50:
-            break  # Break the second while loop
+            print ("Please enter another number another number if you want to continue, if not, input an invalid number, thank you!")
         else:
-            print("We cannot accept any number that is greater than or less than the range of 1-50, please try again")
-
-    #Store the values to the general list
-    value_archive.append(range_values)
-
-    while True:
-        # Create another statement that ask users if they want to add more entries, if not, break the first loop
-        another_entry = input("Would you like to input more numbers (y/n): ")
-        if another_entry == "y":
-            print("Input another number again")
             break
-        elif another_entry == "n":
-            break #Break the loop for reentry
-        elif another_entry != "y" and another_entry != "n":
-            print ("Wrong command prompt format, please input (y/n) only")
-    if another_entry == "n":
-        break #Break the final loop
+
+        # Store the values to the general list
+        value_archive.append(range_values)
+
+    break #Breaking the final loop
 
 #Place five list for storing designated values stated in the conditions
 result_1= []
