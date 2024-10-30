@@ -1,7 +1,6 @@
 #State the list
 value_archive= []
 
-
 #Place a while loop
 while True:
 
@@ -53,7 +52,3 @@ val_5=(len(result_5))
 
 #Print all the values inputted by arrange in various ranges from 1-10...all the way to 41-50
 print (f" 1-10: {val_1} \n 11-20: {val_2} \n 21-30: {val_3} \n 31-40: {val_4} \n 41-50: {val_5}")
-
-
-
-
